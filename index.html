@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dominic Abrematea | AI Automation VA</title>
+<meta name="description" content="Dominic Abrematea – AI Automation Virtual Assistant. GoHighLevel pipelines and workflows, funnels, Zapier, AI video editing, email sequences and admin support.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+<style>
+  :root{--ink:#0f172a;--body:#475569;--muted:#94a3b8;--accent:#2563eb;--accent2:#0ea5e9;--bg:#ffffff;--soft:#f1f5f9;--line:#e2e8f0;--card:#ffffff}
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:Inter,system-ui,Segoe UI,Arial,sans-serif;color:var(--body);background:var(--bg);line-height:1.6}
+  a{color:inherit}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+  /* nav */
+  header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .logo{font-weight:800;color:var(--ink);text-decoration:none;font-size:18px}
+  .logo span{color:var(--accent)}
+  .nav ul{display:flex;gap:24px;list-style:none;margin:0;padding:0}
+  .nav ul a{text-decoration:none;font-weight:500;font-size:15px;color:var(--body)}
+  .nav ul a:hover{color:var(--accent)}
+  .btn{display:inline-block;padding:12px 22px;border-radius:10px;font-weight:600;text-decoration:none;font-size:15px;transition:.2s}
+  .btn-primary{background:var(--accent);color:#fff}
+  .btn-primary:hover{background:#1d4ed8}
+  .btn-ghost{border:1.5px solid var(--line);color:var(--ink)}
+  .btn-ghost:hover{border-color:var(--accent);color:var(--accent)}
+  /* hero */
+  .hero{padding:88px 0 72px;background:radial-gradient(1200px 400px at 80% -10%,#dbeafe 0,transparent 60%),radial-gradient(800px 300px at 0% 0%,#e0f2fe 0,transparent 60%)}
+  .eyebrow{display:inline-block;font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);background:#eff6ff;padding:6px 12px;border-radius:999px}
+  h1{color:var(--ink);font-size:clamp(34px,5.2vw,58px);line-height:1.08;margin:18px 0;letter-spacing:-.02em;font-weight:800}
+  h1 em{font-style:normal;background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .lead{font-size:clamp(17px,2vw,20px);max-width:680px}
+  .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:56px}
+  .stat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}
+  .stat b{display:block;font-size:28px;color:var(--ink);font-weight:800}
+  .stat small{font-size:14px}
+  /* sections */
+  section{padding:80px 0}
+  .alt{background:var(--soft)}
+  h2{color:var(--ink);font-size:clamp(28px,3.4vw,40px);margin:0 0 10px;letter-spacing:-.02em}
+  .sub{max-width:680px;margin:0 0 40px}
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:26px}
+  .card h3{color:var(--ink);margin:12px 0 8px;font-size:19px}
+  .card p{margin:0;font-size:15px}
+  .icon{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:#eff6ff;color:var(--accent);font-size:22px}
+  /* portfolio */
+  .video{border-radius:16px;overflow:hidden;border:1px solid var(--line);background:#000;margin-bottom:40px}
+  .video video{display:block;width:100%;height:auto;max-height:80vh;margin:0 auto}
+  .tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px}
+  .tab{border:1px solid var(--line);background:#fff;padding:8px 16px;border-radius:999px;font:inherit;font-size:14px;font-weight:600;cursor:pointer;color:var(--body)}
+  .tab.active{background:var(--ink);color:#fff;border-color:var(--ink)}
+  .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .shot{margin:0;background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;cursor:zoom-in;transition:.2s}
+  .shot:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(15,23,42,.08)}
+  .shot img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;object-position:top}
+  .shot figcaption{padding:12px 14px;font-size:14px;font-weight:600;color:var(--ink)}
+  .note{font-size:13px;color:var(--muted);margin-top:16px}
+  /* experience */
+  .timeline{display:grid;gap:16px}
+  .job{display:grid;grid-template-columns:180px 1fr;gap:20px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px 24px}
+  .job .when{font-weight:700;color:var(--accent);font-size:14px}
+  .job h3{margin:0;color:var(--ink);font-size:18px}
+  .job .org{font-size:14px;color:var(--muted);margin-bottom:8px}
+  .job ul{margin:0;padding-left:18px;font-size:15px}
+  .tools{display:flex;flex-wrap:wrap;gap:10px}
+  .tools span{background:#fff;border:1px solid var(--line);padding:8px 14px;border-radius:999px;font-size:14px;font-weight:500;color:var(--ink)}
+  /* contact */
+  .contact{background:var(--ink);color:#cbd5e1;border-radius:24px;padding:56px;text-align:center}
+  .contact h2{color:#fff}
+  .contact .cta{justify-content:center}
+  .contact .btn-ghost{color:#fff;border-color:#334155}
+  footer{padding:32px 0;text-align:center;font-size:14px;color:var(--muted)}
+  /* lightbox */
+  dialog{border:0;padding:0;background:transparent;max-width:96vw;max-height:94vh}
+  dialog::backdrop{background:rgba(2,6,23,.85)}
+  dialog img{max-width:96vw;max-height:90vh;border-radius:10px;display:block}
+  dialog p{color:#fff;text-align:center;margin:10px 0 0;font-weight:600}
+  @media (max-width:900px){.grid3,.gallery{grid-template-columns:1fr 1fr}.stats{grid-template-columns:1fr 1fr}.nav ul{display:none}}
+  @media (max-width:600px){.grid3,.gallery{grid-template-columns:1fr}.job{grid-template-columns:1fr;gap:6px}.contact{padding:36px 20px}section{padding:60px 0}.hero{padding:56px 0}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top">Dominic<span>.</span></a>
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="btn btn-primary" href="#contact">Hire me</a>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <span class="eyebrow">AI Automation Virtual Assistant</span>
+      <h1>I build the systems that <em>run your business</em> while you focus on growth.</h1>
+      <p class="lead">I'm Dominic, a Virtual Assistant from the Philippines with 6+ years in operations, digital marketing, audit and finance. I build GoHighLevel pipelines, workflow automations, funnels and websites, edit short-form video with AI tools, and handle the admin work, checking every detail before it reaches you.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="#portfolio">See my work</a>
+        <a class="btn btn-ghost" href="#contact">Let's talk</a>
+      </div>
+      <div class="stats">
+        <div class="stat"><b>10+</b><small>sales funnels &amp; landing pages built</small></div>
+        <div class="stat"><b>100%</b><small>on-time email sequence delivery</small></div>
+        <div class="stat"><b>₱100K+</b><small>inventory discrepancy found &amp; resolved</small></div>
+        <div class="stat"><b>0</b><small>payroll errors across 2 years</small></div>
+      </div>
+    </div>
+  </div>
+
+  <section id="services">
+    <div class="wrap">
+      <h2>What I can do for you</h2>
+      <p class="sub">Fast, AI-assisted output with careful human checking. I use AI to move quickly and I verify every result before it reaches you.</p>
+      <div class="grid3">
+        <div class="card"><div class="icon">⚙️</div><h3>GoHighLevel &amp; Automation</h3><p>Lead pipelines, opportunity stages, CRM workflows, buyer tagging, sale alerts, course access and follow-up sequences, plus Zapier integrations that connect your tools.</p></div>
+        <div class="card"><div class="icon">🧭</div><h3>Websites, Funnels &amp; Portals</h3><p>Websites, landing pages, sales funnels, checkout and order forms, and member portals built in GoHighLevel, ClickFunnels and AI web builders.</p></div>
+        <div class="card"><div class="icon">🎬</div><h3>AI Video Editing</h3><p>Raw footage and talking-head videos turned into Reels, Shorts and TikToks, with AI rough cuts, audio cleanup, auto-captions and pacing edits.</p></div>
+        <div class="card"><div class="icon">✉️</div><h3>Email &amp; Content</h3><p>Weekly email nurture sequences drafted with AI, then edited to your brand voice, segmented and scheduled. Also social media scheduling and Canva graphics.</p></div>
+        <div class="card"><div class="icon">📄</div><h3>Contracts, SOPs &amp; Docs</h3><p>Contracts, service scopes and SOPs drafted with AI prompts, with every clause checked for accuracy and compliance. Repeatable build guides for your team.</p></div>
+        <div class="card"><div class="icon">📊</div><h3>Admin, Reporting &amp; Audit</h3><p>Email and calendar management, data entry, spreadsheet auditing, reconciliation, payroll and billing support, and clear written performance reports.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="alt">
+    <div class="wrap">
+      <h2>Portfolio</h2>
+      <p class="sub">Real GoHighLevel systems I've built for clients. Client names, logos, faces and private details are blurred for confidentiality.</p>
+
+      <div class="video">
+        <video controls preload="metadata" playsinline poster="images/site-a-home.png">
+          <source src="video/ghl-portfolio.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="tabs" role="tablist">
+        <button class="tab active" data-f="all">All</button>
+        <button class="tab" data-f="pipe">Pipelines &amp; Workflows</button>
+        <button class="tab" data-f="web">Websites</button>
+        <button class="tab" data-f="lead">Lead Magnets</button>
+        <button class="tab" data-f="sys">Checkout &amp; Portals</button>
+      </div>
+
+      <div class="gallery" id="gallery">
+        <figure class="shot" data-c="pipe"><img loading="lazy" src="images/pipeline-sales.png" alt="Sales pipeline"><figcaption>Sales pipeline: researched → won</figcaption></figure>
+        <figure class="shot" data-c="pipe"><img loading="lazy" src="images/pipeline-outreach.png" alt="Outreach pipeline"><figcaption>Outreach pipeline</figcaption></figure>
+        <figure class="shot" data-c="pipe"><img loading="lazy" src="images/pipeline-affiliates.png" alt="Affiliate applications pipeline"><figcaption>Affiliate applications pipeline</figcaption></figure>
+        <figure class="shot" data-c="pipe"><img loading="lazy" src="images/workflow-course-access.png" alt="Course access workflow"><figcaption>Workflow: course access after purchase</figcaption></figure>
+        <figure class="shot" data-c="pipe"><img loading="lazy" src="images/workflow-sale-alert.png" alt="Sale notification workflow"><figcaption>Workflow: instant sale notification</figcaption></figure>
+        <figure class="shot" data-c="pipe"><img loading="lazy" src="images/workflow-lead-magnet.png" alt="Lead magnet workflow"><figcaption>Workflow: lead magnet delivery</figcaption></figure>
+        <figure class="shot" data-c="web"><img loading="lazy" src="images/site-a-home.png" alt="Consulting website home page"><figcaption>Consulting website: home page</figcaption></figure>
+        <figure class="shot" data-c="web"><img loading="lazy" src="images/site-a-cards.png" alt="Consulting website solutions section"><figcaption>Consulting website: solutions section</figcaption></figure>
+        <figure class="shot" data-c="web"><img loading="lazy" src="images/site-b-home.png" alt="B2B growth website"><figcaption>B2B growth website: home page</figcaption></figure>
+        <figure class="shot" data-c="web"><img loading="lazy" src="images/site-c-home.png" alt="Real estate website"><figcaption>Real estate website: home page</figcaption></figure>
+        <figure class="shot" data-c="web"><img loading="lazy" src="images/site-c-sell.png" alt="Real estate seller page"><figcaption>Real estate website: seller page</figcaption></figure>
+        <figure class="shot" data-c="lead"><img loading="lazy" src="images/lead-calculator.png" alt="Salary gap calculator"><figcaption>Lead magnet: salary gap calculator</figcaption></figure>
+        <figure class="shot" data-c="lead"><img loading="lazy" src="images/lead-checklist.png" alt="Independence checklist"><figcaption>Lead magnet: checklist</figcaption></figure>
+        <figure class="shot" data-c="lead"><img loading="lazy" src="images/lead-audit.png" alt="Expertise audit"><figcaption>Lead magnet: expertise audit</figcaption></figure>
+        <figure class="shot" data-c="sys"><img loading="lazy" src="images/checkout.png" alt="Checkout order box"><figcaption>Checkout with order bump</figcaption></figure>
+        <figure class="shot" data-c="sys"><img loading="lazy" src="images/member-portal.png" alt="Member portal courses"><figcaption>Member portal: course library</figcaption></figure>
+        <figure class="shot" data-c="sys"><img loading="lazy" src="images/funnels-library.png" alt="Funnels library"><figcaption>Funnels library</figcaption></figure>
+      </div>
+      <p class="note">Click any screenshot to view it full size.</p>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="wrap">
+      <h2>Experience</h2>
+      <p class="sub">A background in audit and finance means I bring accuracy to everything I build.</p>
+      <div class="timeline">
+        <div class="job"><div class="when">2025 – 2026</div><div><h3>AI &amp; Operations Specialist</h3><div class="org">Confidential Client · Remote</div><ul>
+          <li>AI-assisted video post-production for short-form content</li>
+          <li>Built 10+ landing pages and funnels and documented repeatable build frameworks</li>
+          <li>GHL pipelines, CRM automations and weekly email sequences with 100% on-time delivery</li>
+          <li>Contracts and SOPs drafted with AI and checked clause by clause</li></ul></div></div>
+        <div class="job"><div class="when">2023 – 2025</div><div><h3>Business Development Associate</h3><div class="org">Calmar Land Development Corp.</div><ul>
+          <li>Drafted and audited leasing and property contracts with zero discrepancies</li>
+          <li>Monthly data-driven reports and feasibility studies with ROI modeling</li></ul></div></div>
+        <div class="job"><div class="when">2021 – 2023</div><div><h3>Auditor</h3><div class="org">Queen Margarette Hotel</div><ul>
+          <li>Found and resolved a ₱100,000+ inventory discrepancy and received a formal commendation</li>
+          <li>Designed audit spreadsheets and kept a zero-violation compliance record</li></ul></div></div>
+        <div class="job"><div class="when">2019 – 2021</div><div><h3>Admin &amp; Finance Officer · Inventory Clerk</h3><div class="org">Bplus Konstrak · Sanford Marketing Corp.</div><ul>
+          <li>Payroll, billing and procurement with zero discrepancies; 100% accurate SAP inventory records</li></ul></div></div>
+      </div>
+
+      <h2 style="margin-top:56px;font-size:26px">Tools I use</h2>
+      <div class="tools" style="margin-top:16px">
+        <span>GoHighLevel</span><span>ClickFunnels</span><span>Zapier</span><span>ChatGPT / Claude</span><span>CapCut</span><span>Canva</span><span>Google Workspace</span><span>Excel</span><span>SAP</span><span>Basecamp</span><span>Apollo</span>
+      </div>
+      <p style="margin-top:24px"><b style="color:var(--ink)">Education:</b> BS Aircraft Maintenance Technology, Cebu Aeronautical Technical School &nbsp;·&nbsp; <b style="color:var(--ink)">English:</b> C2 (Advanced)</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <div class="contact">
+        <h2>Let's build your systems</h2>
+        <p style="max-width:560px;margin:0 auto">Available for long-term remote work with coaches, consultants and small business owners. Happy to start with a small test task.</p>
+        <div class="cta">
+          <a class="btn btn-primary" href="mailto:abremateadominic.da@gmail.com">Email me</a>
+          <a class="btn btn-ghost" href="https://www.upwork.com/freelancers/~0110e7616d23bc10c2" target="_blank" rel="noopener">Upwork</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/dominic-abrematea-408477171/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>© <span id="y"></span> Dominic Abrematea · AI Automation Virtual Assistant</footer>
+
+<dialog id="lb"><img alt=""><p></p></dialog>
+
+<script>
+  document.getElementById('y').textContent = new Date().getFullYear();
+  const tabs = document.querySelectorAll('.tab'), shots = document.querySelectorAll('.shot');
+  tabs.forEach(t => t.addEventListener('click', () => {
+    tabs.forEach(x => x.classList.remove('active')); t.classList.add('active');
+    shots.forEach(s => s.style.display = (t.dataset.f === 'all' || s.dataset.c === t.dataset.f) ? '' : 'none');
+  }));
+  const lb = document.getElementById('lb');
+  shots.forEach(s => s.addEventListener('click', () => {
+    lb.querySelector('img').src = s.querySelector('img').src;
+    lb.querySelector('p').textContent = s.querySelector('figcaption').textContent;
+    lb.showModal();
+  }));
+  lb.addEventListener('click', () => lb.close());
+</script>
+</body>
+</html>
